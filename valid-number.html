@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number validation</title>
+</head>
+
+<body>
+    <script>
+        function validateNumber(num) {
+            if (typeof num === 'number') {
+                alert('valid number :' + num);
+            } else {
+                alert('invalid :' + num);
+            }
+        }
+        validateNumber(12345);
+        validateNumber('12345');
+        validateNumber('123asdf');
+    </script>
+
+    <!-- using regex -->
+    <!-- <script>
+        function validNum(num) {
+            let No_regex = /^[0-9]*$/;
+            if (num.match(No_regex)) {
+                alert('valid number');
+            } else {
+                alert('Invalid Number');
+            }
+        }
+        validNum('a234');
+        validNum('12344');
+    </script> -->
+</body>
+
+</html>

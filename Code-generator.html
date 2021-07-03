@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code-generator</title>
+    <style>
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    </style>
+</head>
+<body>
+    <!-- 7)	Write a program to generate alpha-numeric 10 digit coupon as shown in below -->
+    <section>
+    <input type="text" id="coupon"/>
+   
+    <button type="button" onclick="generateCoupon()">Click to Generate Coupon Code</button>
+     </section>
+
+
+<!-- ========================== -->
+    <script>
+       var inputField = document.getElementById('coupon');
+      function randomString(length, chars) {
+       var result = '';
+    
+        for (var i = length; i > 0; --i){
+             result += chars[Math.floor(Math.random() * chars.length)];
+      }
+        return result;
+
+}
+  function generateCoupon(){
+    inputField.value = randomString(10, '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+}
+
+
+
+    </script>
+</body>
+</html>

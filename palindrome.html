@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrom</title>
+</head>
+
+<body>
+    <!-- Using inbuilt functions -->
+    <script>
+        function palindrome(string) {
+            let stringArray = string.split('');
+            let reverseArray = stringArray.reverse('');
+            let reverseString = reverseArray.join('');
+            if (string == reverseString) {
+                alert('it is Palindrome');
+            } else {
+                alert('Not a palindrome');
+            }
+
+        }
+        palindrome("madam"); //Palindrome
+        palindrome("akshay"); //Not a Palindrome
+    </script>
+
+    <!-- using For loop -->
+    <script>
+        function PalindromeForloop(str) {
+            let len = str.length;
+            for (var i = 0; i < len / 2; i++) {
+                if (str[i] !== str[len - 1 - i]) {
+                    console.log('not a palindrome');
+                } else {
+                    console.log('its a palindrome');
+                }
+            }
+        }
+        PalindromeForloop('madam');
+    </script>
+</body>
+
+</html>

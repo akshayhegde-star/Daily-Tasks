@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+</head>
+
+<body>
+    <form>
+        <input type="text" name="firstName" id="fname" placeholder="First Name">
+        <input type="text" name="lastName" id="lname" placeholder="Last Name">
+
+        <input type="email" name="email" id="e-mail" placeholder="Email">
+
+        <input type="number" name="phone" id="number" placeholder=" Phone">
+        <input type="text" name="address" id="add" placeholder=" Address">
+        <button type="button" onclick="retrieve()">Sign Up</button>
+
+
+
+    </form>
+
+
+
+
+
+    <script>
+        function retrieve() {
+            let firstName = document.getElementById('fname').value;
+            let lastName = document.getElementById('lname').value;
+            let email = document.getElementById('e-mail').value;
+            let phone = document.getElementById('number').value;
+            let address = document.getElementById('add').value;
+
+            // console.log(firstName, lastName, email, phone, address);
+            var obj = {
+                firstName: firstName,
+                lastName: lastName,
+                email: email,
+                phone: phone,
+                address: address
+            }
+            console.log(obj);
+        }
+    </script>
+</body>
+
+
+</html>

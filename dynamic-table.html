@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic-Table</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div id="demo"></div> -->
+    <script>
+        var arrayOfObjects = [{
+                "Name": "Ramesh",
+                "age": "50",
+                "EmailId": "aks@gmail.com"
+            }, {
+                "Name": "Jack",
+                "age": "20",
+                "EmailId": "xyz@gmail.com"
+            }, {
+                "Name": "Son",
+                "age": "45",
+                "EmailId": "adf@gmail.com"
+            }
+
+        ];
+
+        //////////////////////////////////////////////
+        var dynamic = "<table>"
+        dynamic += "<th>Name</th>";
+        dynamic += "<th>age</th>";
+        dynamic += "<th>EmailId</th>";
+        for (let i = 0; i < arrayOfObjects.length; i++) {
+            dynamic += "<tr>";
+            dynamic += "<td>" + arrayOfObjects[i].Name + "</td>";
+            dynamic += "<td>" + arrayOfObjects[i].age + "</td>";
+            dynamic += "<td>" + arrayOfObjects[i].EmailId + "</td>";
+            dynamic += "</tr>"
+        }
+        dynamic += "</table>";
+
+        // document.getElementById('demo').innerHTML = dynamic;
+        document.write(dynamic);
+    </script>
+</body>
+
+</html>

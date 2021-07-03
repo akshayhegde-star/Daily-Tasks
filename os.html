@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OS-Versions</title>
+
+</head>
+
+<body>
+
+
+    <form>
+
+        <input type="text" placeholder="Enter OS name and its version" id="os" name="osName">
+        <button type="button" onclick="osShow()">Show in console</button>
+
+    </form>
+
+    <script>
+        function osShow() {
+            let osName = document.getElementById('os').value;
+            console.log(osName);
+            osArray = osName.split(' ');
+            console.log(osArray);
+            console.log('OS name is ' + osArray[0] + ' Version: ' + osArray[1]);
+
+
+        }
+    </script>
+</body>
+
+</html>

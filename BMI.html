@@ -1,0 +1,46 @@
+<!-- 6)	Mark and John are trying to compare there BMI (Body Mass Index) which is calculated by using formula
+            BMI = mass/(height * height)     (mass in Kg and height in meters)
+a)   Store marks and johns mass and height in variables
+b)      Calculate there both BMI’s
+c)     Create a Boolean variable containing information about whether Mark has higher BMI than John
+d)     Print a String to console like Is Marks BMI is higher  than john ? true
+Else print Marks BMI is higher than John ? false -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>BMI</title>
+ </head>
+ <body>
+     
+ </body>
+ <script>
+    let marksHeight=1.83;
+    let marksWeight=130;
+    // ==========
+    let johnssHeight=1.67;
+    let johnsWeight=  100;
+    // =============
+    let bmiMarks=marksWeight/(marksHeight*marksHeight);
+    console.log(bmiMarks);
+    // =============
+    let bmiJohns=johnsWeight/(johnssHeight*johnssHeight);
+    console.log(bmiJohns);
+// =========boolean Variable============
+    if(bmiMarks>bmiJohns){
+        console.log(true);
+    }else{
+        console.log(false);
+    }
+
+    // ============String==========
+    if(bmiMarks>bmiJohns){
+        console.log('true');
+    }else{
+        console.log('false');
+    }
+ 
+</script>
+ </html>

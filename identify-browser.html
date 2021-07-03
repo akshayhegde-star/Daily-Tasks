@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Identification</title>
+</head>
+
+<body>
+    <p>
+        Is Chrome?
+        <span class="output-chrome"></span>
+    </p>
+
+
+    <button onclick="checkBrowser()">
+        Detect browser
+    </button>
+    <script>
+        function checkBrowser() {
+
+            // Get the user-agent string
+            let userAgentString =
+                navigator.userAgent;
+
+            // Detect Chrome
+            let chromeAgent =
+                userAgentString.indexOf("Chrome") > -1;
+
+
+            document.querySelector(".output-chrome").textContent = chromeAgent;
+
+        }
+    </script>
+</body>
+
+</html>

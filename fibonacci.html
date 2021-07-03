@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Series</title>
+</head>
+
+<body>
+    <script>
+        // program to generate fibonacci series up to a certain number
+        const number = 100;
+        let n1 = 0,
+            n2 = 1,
+            nextTerm;
+
+        document.write('<b>' + 'Fibonacci Series:' + '</b>');
+        document.write(n1 + ",");
+        document.write(n2 + ",");
+
+        nextTerm = n1 + n2;
+
+        while (nextTerm <= number) {
+
+            // print the next term
+            document.write("," + nextTerm);
+
+            n1 = n2;
+            n2 = nextTerm;
+            nextTerm = n1 + n2;
+        }
+    </script>
+
+    <script>
+        // Program to reverse an array
+
+        let array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        let reversedArray = [];
+        for (let i = 0; i = array.length; i++) {
+            reversedArray.push(array.pop());
+        }
+        document.write('<br>');
+        document.write('array = [1, 2, 3, 4, 5, 6, 7, 8, 9]');
+        document.write('<br>');
+        document.write('Reversed Array:');
+        document.write(reversedArray);
+    </script>
+</body>
+
+</html>

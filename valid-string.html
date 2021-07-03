@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Validation</title>
+</head>
+
+<body>
+    <script>
+        function validateString(str) {
+            if (typeof str === 'string') {
+                alert('Valid String :' + str);
+
+            } else {
+                alert('Invalid String :' + str);
+            }
+        }
+        validateString('akshay123'); //valid
+        validateString(12345); //Invalid
+    </script>
+
+
+</body>
+
+</html>
